@@ -123,8 +123,10 @@ h3 {
   background-color: rgb(180, 179, 179);
 }
 
-/* not working please explain. */
-@media all and (max-width: 850) {
+/* Media Query  changing background to red*/
+
+@media all and (max-width: 750px) {
+  html,
   body {
     background-color: red;
   }
