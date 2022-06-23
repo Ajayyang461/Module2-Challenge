@@ -1,0 +1,131 @@
+/* Variable */
+:root {
+  --White: white;
+  --teal: teal;
+}
+/* Resets */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+/* Global Classes */
+html,
+body {
+  height: 100%;
+  background-color: white;
+}
+/* Removing underline */
+a {
+  text-decoration: none;
+}
+/* Header section flexbox */
+header.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--teal);
+  color: var(--White);
+  font-size: 25px;
+  padding: 5px;
+}
+/* flexing the nav bar */
+header.main-header nav {
+  display: flex;
+}
+
+/* Header color */
+header a {
+  color: var(--White);
+  text-decoration: none;
+  margin-left: 15px;
+}
+/* hovering over nav will be grey */
+header a:hover {
+  background-color: rgb(180, 179, 179);
+}
+
+/* image flex box */
+.img-flex {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-top: 35px;
+}
+
+/* Hovering image box will provide a shadow box */
+.img-flex img:hover {
+  box-shadow: 10px 10px 10px 10px teal;
+}
+/* Main page flexbox */
+.main-page-container {
+  display: flex;
+  flex-direction: row;
+  margin: 2%;
+}
+/* Main section backgournd  and font color */
+.section-selector-1 {
+  background-color: var(--teal);
+  color: var(--White);
+  padding: 10px;
+  margin: 5px;
+}
+/* aligning the header and underline */
+.main-page-container .section-selector-1 h2 {
+  text-align: center;
+  text-decoration: underline;
+  margin: 15px;
+}
+/* creating padding for paragraph */
+.main-page-container .section-selector-1 h2 p {
+  padding: 10px;
+}
+/* Footer padding and margin */
+footer {
+  padding: 15px;
+  margin: 2%;
+}
+/* Contact Information */
+h3 {
+  display: flex;
+  color: var(--White);
+  text-decoration: underline;
+  background-color: var(--teal);
+  justify-content: center;
+  padding: 10px;
+  font-size: 25px;
+}
+/* Footer Flexbox */
+.footer-container {
+  display: Flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 10px;
+  padding: 15px;
+}
+/* changing Selection background and margin */
+.footer-container .section-selector-2 {
+  margin: 5px;
+  background-color: var(--teal);
+}
+/* Selecting the anchor */
+.footer-container .section-selector-2 a {
+  text-decoration: none;
+  color: var(--White);
+  padding: 0px 25px;
+  font-size: 25px;
+}
+
+/* Hovering over anchor and changing color*/
+.section-selector-2 a:hover {
+  background-color: rgb(180, 179, 179);
+}
+
+/* not working please explain. */
+@media all and (max-width: 850) {
+  body {
+    background-color: red;
+  }
+}
